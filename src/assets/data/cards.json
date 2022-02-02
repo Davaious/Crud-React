@@ -1,0 +1,31 @@
+{
+    "cards": [{
+        "id": 1,
+        "imgName": "nft",
+        "imgUser": "300,000€/ 1 NFT",
+        "imgURL": "nft"
+
+    },
+    {
+        "id": 2,
+        "imgName": "Bitcoin",
+        "imgUser": "33,000€ / 1token",
+        "imgURL": "Bitcoin"
+    },
+    {
+        "id": 3,
+        "imgName": "Ethereum",
+        "imgUser": "2,200€/ 1token",
+        "imgURL": "ethereum-1"
+    },
+    {
+        "id": 4,
+        "imgName": "Yearnfinance",
+        "imgUser": "22,300 / 1token",
+        "imgURL": "Yearnfinance"
+    }
+    
+                                
+ 
+]
+}

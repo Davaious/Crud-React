@@ -1,0 +1,9 @@
+$colorPrincipal: #4e7fe9;
+$colorSecondary: #0ad0f3;
+$colorCard: #07e7f7;
+$filterPrincipal: invert(26%) sepia(19%) saturate(6454%) hue-rotate(189deg) brighness(99%) contrast (83%);
+@mixin displayFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
