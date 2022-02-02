@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './navbar';
 import data from '../assets/data/cards.json';
 import Cards from './cards';
+import Styles from '../styles/App.scss';
 
 class Home extends Component{
     state={

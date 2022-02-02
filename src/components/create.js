@@ -1,73 +1,38 @@
 import React, {useState} from "react";
-import CreateTable from "./CreateTable";
-import CreateForm from "./CreateForm";
-import Navbar from "../navbar";
-import '../../styles/Create.css';
-
-const falseDb = [{
-        "id": 1,
-        "imgName": "",
-        "imgUser": "",
-        "imgURL": ""
-
-    },
-    {
-        "id": 2,
-        "imgName": "",
-        "imgUser": "",
-        "imgURL": ""
-    }
-];
 
 
-const Create = () => {
-    const [db, setDb] = useState(falseDb);
-    const [dataToEdit, setDataToEdit] = useState(null);
 
-
-    const createData = (data) => {
-        //console.log(data);
-        data.id = Date.now();
-        setDb([...db, data]);
-    };
-
-    const updateData = (data) => {
-        let newData = db.map((el)=>(el.id === data.id ? data:el));
-        setDb(newData);
-    };
-
-    const deleteData = (id) => {
-        let isDelete = window.confirm(`¿Estás seguro de eliminar?`);
-
-        if (isDelete) {
-            let newData = db.filter(el => el.id !== id);
-            setDb(newData);
-        }else{
-            return;
-        }
-    };
+const Create =()=>{
+    const [form, setform] = useState ()
 
     return(
         <div>
-            <Navbar txtColor="txtColor2" />
-            <h2>CREATE</h2>
-        
-        
-        <div className="ct-create">
-            <CreateForm 
-            createData={createData} 
-            updateData={updateData} 
-            dataToEdit={dataToEdit}
-            setDataToEdit = {setDataToEdit} 
-            />
-             <CreateTable 
-             data={db}
-             setDataToEdit = {setDataToEdit} 
-             deleteData={deleteData} 
-             />
-        </div>
+            <h3> New Token </h3>
+            <form>
+                <input
+                type = "text"
+                name = "name"
+                placeholder = "Name"
+                value = ""
+                />
+
+                <input
+                type = "text"
+                name = "price"
+                placeholder = "Price"
+                value = ""
+                />
+
+<input
+                type = "text"
+                name = "img"
+                placeholder = "Picture"
+                value = ""
+                />
+
+            </form>
         </div>
     );
-};
+}
 
 export default Create;

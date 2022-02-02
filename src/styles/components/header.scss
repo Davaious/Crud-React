@@ -1,7 +1,7 @@
 .ct-header{
     @include displayFlex();
     width: 100vm;
-    height: 53px;
+    height: 50px;
     background-color: $colorSecondary;
     justify-content: space-between;
 }
@@ -9,7 +9,7 @@
 .img-logo{
     filter: $filterPrincipal;
     width: 50%;
-    margin-left: 20%;
+    margin-left: 10%;
 
 }
 .txtcColor1 {
@@ -21,12 +21,12 @@
 
 .txtcolor2{
     font-size: 1.5rem;
-    color: yellow;
+    color: rgb(255, 255, 2);
     text-decoration: none;
     margin-right: 5%;
 }
 
 .txt-title{
     color: $colorPrincipal;
-    margin: 5px 0px 0px 92px;
+    margin: 5px 2px 2px 92px;
 }
